@@ -126,16 +126,15 @@ button {
   padding: 4px 12px;
   margin: 0 4px;
   cursor: pointer;
-}
-
-.navbar__menu__item.active {
+  color: var(--color-white);
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
-  border: 1px solid var(--color-white);
 }
 
 .navbar__menu__item:hover {
   background-color: var(--color-orange);
   border-radius: var(--size-border-radius);
+  border: 1px solid var(--color-white);
 }
 
 .navbar__toggle-btn {
@@ -385,7 +384,7 @@ button {
 }
 
 .project__description h3 {
-  color: var(--color-white);
+  color: var(--color-darkorange);
 }
 
 .project__description h3:after {
@@ -393,9 +392,9 @@ button {
   display: block;
   position: relative;
   left: 50%;
-  margin-left: -12px;
+  transform: translateX(-50%);
   margin-top: 8px;
-  width: 25px;
+  width: 50px;
   height: 2px;
   background-color: var(--color-brightbeige);
 }
@@ -498,6 +497,11 @@ button {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-pink);
+  }
+
+  #navbar.navbar--dark {
+    padding: 16px;
   }
 
   .navbar__menu {
@@ -505,6 +509,10 @@ button {
     text-align: center;
     width: 100%;
     display: none;
+  }
+
+  .navbar__menu.open {
+    display: block;
   }
 
   .about__majors {
