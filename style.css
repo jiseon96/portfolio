@@ -480,7 +480,7 @@ button {
 
 .contact__links i:hover {
   transform: scale(1.2);
-  color: var(--color-greenlighter);
+  color: var(--color-green2);
 }
 
 /* Scroll */
@@ -509,16 +509,33 @@ button {
   :root {
     /* Font size */
     --font-large: 30px;
-    --font-medium: 18px;
+    --font-medium: 20px;
     --font-regular: 16px;
     --font-small: 14px;
     --font-micro: 12px;
   }
+
+  h1 {
+    margin-top: 35px;
+  }
+
+  .home__title {
+    font-size: var(--font-medium);
+  }
+
+  .home__description {
+    font-size: var(--font-regular);
+  }
+
+  .home__contact {
+    font-size: var(--font-small);
+  }
+
   .navbar__toggle-btn {
     display: block;
     top: 16px;
     right: 16px;
-    font-size: var(--font-medium);
+    font-size: var(--font-regular);
   }
 
   #navbar {
